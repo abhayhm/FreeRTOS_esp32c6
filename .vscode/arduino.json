@@ -1,0 +1,7 @@
+{
+    "configuration": "JTAGAdapter=default,CDCOnBoot=cdc,PartitionScheme=default,CPUFreq=160,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none,EraseFlash=none",
+    "board": "esp32:esp32:dfrobot_firebeetle2_esp32c6",
+    "sketch": "rtos_esp32c6.ino",
+    "port": "COM3",
+    "output": "build"
+}

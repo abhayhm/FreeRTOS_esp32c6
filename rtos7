@@ -1,0 +1,41 @@
+// Software timer example (LCD backlight auto dim feature)
+
+void led_off(TimerHandle_t xTimer){
+    digitalWrite(LED_BUILTIN, LOW);
+}
+
+TimerHandle_t oneShotTimer = xTimerCreate(
+    "One shot timer",
+    2500/portTICK_PERIOD_MS,
+    pdFALSE,
+    (void *)0,
+    led_off);
+
+void read_input(void* pvParameters){
+    while(1){
+        if(Serial.available()>0){
+            Serial.read();
+            digitalWrite(LED_BUILTIN, HIGH);
+            xTimerStart(oneShotTimer,portMAX_DELAY);
+        }
+    }
+}
+
+void setup(){
+    Serial.begin(115200);
+    pinMode(LED_BUILTIN, OUTPUT);
+
+    xTaskCreate(
+        read_input,
+        "Read uart input",
+        1024,
+        NULL,
+        1,
+        NULL);
+
+    vTaskDelete(NULL);
+}
+
+void loop(){
+
+}

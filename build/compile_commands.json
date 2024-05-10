@@ -1,0 +1,40 @@
+[
+ {
+  "directory": "c:\\rtos_esp32c6",
+  "arguments": [
+   "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2302/bin/riscv32-esp-elf-g++",
+   "-MMD",
+   "-c",
+   "@C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312/esp32c6/flags/cpp_flags",
+   "-w",
+   "-Os",
+   "-DF_CPU=160000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_DFROBOT_FIREBEETLE_2_ESP32C6",
+   "-DARDUINO_ARCH_ESP32",
+   "-DARDUINO_BOARD=\"DFROBOT_FIREBEETLE_2_ESP32C6\"",
+   "-DARDUINO_VARIANT=\"dfrobot_firebeetle2_esp32c6\"",
+   "-DARDUINO_PARTITION_default",
+   "-DARDUINO_HOST_OS=\"windows\"",
+   "-DARDUINO_FQBN=\"esp32:esp32:dfrobot_firebeetle2_esp32c6:JTAGAdapter=default,CDCOnBoot=cdc,PartitionScheme=default,CPUFreq=160,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none,EraseFlash=none\"",
+   "-DESP32",
+   "-DCORE_DEBUG_LEVEL=0",
+   "-DARDUINO_USB_MODE=1",
+   "-DARDUINO_USB_CDC_ON_BOOT=1",
+   "@C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312/esp32c6/flags/defines",
+   "-IC:\\rtos_esp32c6",
+   "-iprefix",
+   "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312/esp32c6/include/",
+   "@C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312/esp32c6/flags/includes",
+   "-IC:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312/esp32c6/qio_qspi/include",
+   "-IC:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\cores\\esp32",
+   "-IC:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\variants\\dfrobot_firebeetle2_esp32c6",
+   "@C:\\rtos_esp32c6\\build/build_opt.h",
+   "@C:\\rtos_esp32c6\\build/file_opts",
+   "C:\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp",
+   "-o",
+   "C:\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp.o"
+  ],
+  "file": "C:\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp"
+ }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\cores\\esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\variants\\dfrobot_firebeetle2_esp32c6"
+  },
+  {
+    "Sourcefile": "C:\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
