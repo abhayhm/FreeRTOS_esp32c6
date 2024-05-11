@@ -10,7 +10,87 @@
     "Includepath": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\variants\\dfrobot_firebeetle2_esp32c6"
   },
   {
-    "Sourcefile": "C:\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp",
+    "Sourcefile": "C:\\repos\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp",
+    "Include": "WiFi.h",
+    "Includepath": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src"
+  },
+  {
+    "Sourcefile": "C:\\repos\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp",
+    "Include": "Network.h",
+    "Includepath": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\Network\\src"
+  },
+  {
+    "Sourcefile": "C:\\repos\\rtos_esp32c6\\build\\sketch\\rtos_esp32c6.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\AP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\STA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\WiFi\\src\\WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\Network\\src\\NetworkClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\Network\\src\\NetworkEvents.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\Network\\src\\NetworkInterface.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\Network\\src\\NetworkManager.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\Network\\src\\NetworkServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\libraries\\Network\\src\\NetworkUdp.cpp",
     "Include": "",
     "Includepath": null
   }

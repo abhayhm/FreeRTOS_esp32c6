@@ -1,5 +1,5 @@
-C:\rtos_esp32c6\build\sketch\rtos_esp32c6.ino.cpp.o: \
- C:\rtos_esp32c6\build\sketch\rtos_esp32c6.ino.cpp \
+C:\repos\rtos_esp32c6\build\sketch\rtos_esp32c6.ino.cpp.o: \
+ C:\repos\rtos_esp32c6\build\sketch\rtos_esp32c6.ino.cpp \
  C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Arduino.h \
  C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/esp_arduino_version.h \
  C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
@@ -125,4 +125,52 @@ C:\rtos_esp32c6\build\sketch\rtos_esp32c6.ino.cpp.o: \
  C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_hw_support/include/hal/cpu_hal.h \
  C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_hw_support/include/hal/cpu_ll.h \
  C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/io_pin_remap.h \
- C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Arduino.h
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Arduino.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFi.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Print.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiType.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_wifi/include/esp_wifi_types.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_wifi/include/esp_private/esp_wifi_types_private.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_hw_support/include/esp_interface.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_event/include/esp_event_base.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_wifi/include/esp_wifi_he_types.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiSTA.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiGeneric.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_wifi/include/esp_smartconfig.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_netif/include/esp_netif_types.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_netif/include/esp_netif_ip_addr.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_eth/include/esp_eth_driver.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_eth/include/esp_eth_com.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/hal/include/hal/eth_types.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_eth/include/esp_eth_spec.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_eth/include/esp_eth_mac.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/driver/spi/include/driver/spi_master.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/hal/include/hal/spi_types.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/driver/spi/include/driver/spi_common.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_system/include/esp_ipc.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_hw_support/include/intr_types.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_eth/include/esp_eth_phy.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/wifi_provisioning/include/wifi_provisioning/manager.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/protocomm/include/common/protocomm.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/protocomm/include/security/protocomm_security.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/wifi_provisioning/include/wifi_provisioning/wifi_config.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/Network.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/NetworkInterface.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Printable.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/NetworkEvents.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/NetworkManager.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/WString.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/NetworkClient.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Client.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/NetworkServer.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Server.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/NetworkUdp.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/Udp.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\cores\esp32/cbuf.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.1-3662303f312/esp32c6/include/esp_ringbuf/include/freertos/ringbuf.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiAP.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiScan.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiClient.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiServer.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\WiFi\src/WiFiUdp.h \
+ C:\Users\abhay\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.0-rc1\libraries\Network\src/NetworkUdp.h

@@ -1,132 +1,94 @@
 #include <Arduino.h>
-#line 1 "C:\\rtos_esp32c6\\rtos_esp32c6.ino"
-/**
- * ESP32 Dining Philosophers using Dijkstra hierarchy/priority assignment to solve livelock
- * 
- * The classic "Dining Philosophers" problem in FreeRTOS form.
- * 
- * Based on http://www.cs.virginia.edu/luther/COA2/S2019/pa05-dp.html
- * 
- * Date: February 8, 2021
- * Author: Shawn Hymel
- * License: 0BSD
+#line 1 "C:\\repos\\rtos_esp32c6\\rtos_esp32c6.ino"
+/*
+ *  This sketch demonstrates how to scan WiFi networks.
+ *  The API is based on the Arduino WiFi Shield library, but has significant changes as newer WiFi functions are supported.
+ *  E.g. the return value of `encryptionType()` different because more modern encryption is supported.
  */
+#include "WiFi.h"
 
-// Settings
-enum { NUM_TASKS = 5 };           // Number of tasks (philosophers)
-enum { TASK_STACK_SIZE = 2048 };  // Bytes in ESP32, words in vanilla FreeRTOS
-
-// Globals
-static SemaphoreHandle_t bin_sem;   // Wait for parameters to be read
-static SemaphoreHandle_t done_sem;  // Notifies main task when done
-static SemaphoreHandle_t chopstick[NUM_TASKS];
-
-//*****************************************************************************
-// Tasks
-
-// The only task: eating
-#line 26 "C:\\rtos_esp32c6\\rtos_esp32c6.ino"
-void eat(void *parameters);
-#line 80 "C:\\rtos_esp32c6\\rtos_esp32c6.ino"
+#line 8 "C:\\repos\\rtos_esp32c6\\rtos_esp32c6.ino"
 void setup();
-#line 121 "C:\\rtos_esp32c6\\rtos_esp32c6.ino"
+#line 20 "C:\\repos\\rtos_esp32c6\\rtos_esp32c6.ino"
 void loop();
-#line 26 "C:\\rtos_esp32c6\\rtos_esp32c6.ino"
-void eat(void *parameters) {
+#line 8 "C:\\repos\\rtos_esp32c6\\rtos_esp32c6.ino"
+void setup()
+{
+    Serial.begin(115200);
 
-  int num;
-  int num_plus_1;
-  char buf[50];
+    // Set WiFi to station mode and disconnect from an AP if it was previously connected.
+    WiFi.mode(WIFI_STA);
+    WiFi.disconnect();
+    delay(100);
 
-  // Copy parameter and increment semaphore count
-  num = *(int *)parameters;
-  xSemaphoreGive(bin_sem);
-
-  if(num < (num+1)%NUM_TASKS){
-    num_plus_1 = (num+1)%NUM_TASKS;
-  }
-  else{
-    num_plus_1 = num;
-    num = (num+1)%NUM_TASKS;
-  }
-
-  // Take left chopstick
-  xSemaphoreTake(chopstick[num], portMAX_DELAY);
-  sprintf(buf, "Philosopher %i took chopstick %i", num, num);
-  Serial.println(buf);
-
-  // Add some delay to force deadlock
-  vTaskDelay(1 / portTICK_PERIOD_MS);
-
-  // Take right chopstick
-  xSemaphoreTake(chopstick[num_plus_1], portMAX_DELAY);
-  sprintf(buf, "Philosopher %i took chopstick %i", num, (num+1)%NUM_TASKS);
-  Serial.println(buf);
-
-  // Do some eating
-  sprintf(buf, "Philosopher %i is eating", num);
-  Serial.println(buf);
-  vTaskDelay(10 / portTICK_PERIOD_MS);
-
-  // Put down right chopstick
-  xSemaphoreGive(chopstick[(num+1)%NUM_TASKS]);
-  sprintf(buf, "Philosopher %i returned chopstick %i", num, (num+1)%NUM_TASKS);
-  Serial.println(buf);
-
-  // Put down left chopstick
-  xSemaphoreGive(chopstick[num]);
-  sprintf(buf, "Philosopher %i returned chopstick %i", num, num);
-  Serial.println(buf);
-
-  // Notify main task and delete self
-  xSemaphoreGive(done_sem);
-  vTaskDelete(NULL);
+    Serial.println("Setup done");
 }
 
-//*****************************************************************************
-// Main (runs as its own task with priority 1 on core 1)
+void loop()
+{
+    Serial.println("Scan start");
 
-void setup() {
+    // WiFi.scanNetworks will return the number of networks found.
+    int n = WiFi.scanNetworks();
+    Serial.println("Scan done");
+    if (n == 0) {
+        Serial.println("no networks found");
+    } else {
+        Serial.print(n);
+        Serial.println(" networks found");
+        Serial.println("Nr | SSID                             | RSSI | CH | Encryption");
+        for (int i = 0; i < n; ++i) {
+            // Print SSID and RSSI for each network found
+            Serial.printf("%2d",i + 1);
+            Serial.print(" | ");
+            Serial.printf("%-32.32s", WiFi.SSID(i).c_str());
+            Serial.print(" | ");
+            Serial.printf("%4ld", WiFi.RSSI(i));
+            Serial.print(" | ");
+            Serial.printf("%2ld", WiFi.channel(i));
+            Serial.print(" | ");
+            switch (WiFi.encryptionType(i))
+            {
+            case WIFI_AUTH_OPEN:
+                Serial.print("open");
+                break;
+            case WIFI_AUTH_WEP:
+                Serial.print("WEP");
+                break;
+            case WIFI_AUTH_WPA_PSK:
+                Serial.print("WPA");
+                break;
+            case WIFI_AUTH_WPA2_PSK:
+                Serial.print("WPA2");
+                break;
+            case WIFI_AUTH_WPA_WPA2_PSK:
+                Serial.print("WPA+WPA2");
+                break;
+            case WIFI_AUTH_WPA2_ENTERPRISE:
+                Serial.print("WPA2-EAP");
+                break;
+            case WIFI_AUTH_WPA3_PSK:
+                Serial.print("WPA3");
+                break;
+            case WIFI_AUTH_WPA2_WPA3_PSK:
+                Serial.print("WPA2+WPA3");
+                break;
+            case WIFI_AUTH_WAPI_PSK:
+                Serial.print("WAPI");
+                break;
+            default:
+                Serial.print("unknown");
+            }
+            Serial.println();
+            delay(10);
+        }
+    }
+    Serial.println("");
 
-  char task_name[20];
+    // Delete the scan result to free memory for code below.
+    WiFi.scanDelete();
 
-  // Configure Serial
-  Serial.begin(115200);
-
-  // Wait a moment to start (so we don't miss Serial output)
-  vTaskDelay(1000 / portTICK_PERIOD_MS);
-  Serial.println();
-  Serial.println("---FreeRTOS Dining Philosophers Challenge---");
-
-  // Create kernel objects before starting tasks
-  bin_sem = xSemaphoreCreateBinary();
-  done_sem = xSemaphoreCreateCounting(NUM_TASKS, 0);
-  for (int i = 0; i < NUM_TASKS; i++) {
-    chopstick[i] = xSemaphoreCreateMutex();
-  }
-
-  // Have the philosphers start eating
-  for (int i = 0; i < NUM_TASKS; i++) {
-    sprintf(task_name, "Philosopher %i", i);
-    xTaskCreate(eat,
-                task_name,
-                TASK_STACK_SIZE,
-                (void *)&i,
-                1,
-                NULL);
-    xSemaphoreTake(bin_sem, portMAX_DELAY);
-  }
-
-
-  // Wait until all the philosophers are done
-  for (int i = 0; i < NUM_TASKS; i++) {
-    xSemaphoreTake(done_sem, portMAX_DELAY);
-  }
-
-  // Say that we made it through without deadlock
-  Serial.println("Done! No deadlock occurred!");
+    // Wait a bit before scanning again.
+    delay(5000);
 }
 
-void loop() {
-  // Do nothing in this task
-}

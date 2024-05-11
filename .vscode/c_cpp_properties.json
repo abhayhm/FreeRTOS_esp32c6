@@ -11,7 +11,7 @@
             ],
             "intelliSenseMode": "gcc-x64",
             "includePath": [
-                "C:\\rtos_esp32c6",
+                "C:\\repos\\rtos_esp32c6",
                 "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312\\esp32c6\\qio_qspi\\include",
                 "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\cores\\esp32",
                 "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\variants\\dfrobot_firebeetle2_esp32c6",
@@ -22,7 +22,8 @@
                 "c:\\users\\abhay\\appdata\\local\\arduino15\\packages\\esp32\\tools\\esp-rv32\\2302\\lib\\gcc\\riscv32-esp-elf\\12.2.0\\include-fixed",
                 "c:\\users\\abhay\\appdata\\local\\arduino15\\packages\\esp32\\tools\\esp-rv32\\2302\\riscv32-esp-elf\\sys-include",
                 "c:\\users\\abhay\\appdata\\local\\arduino15\\packages\\esp32\\tools\\esp-rv32\\2302\\riscv32-esp-elf\\include",
-                "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312\\esp32c6\\include\\**"
+                "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.1-3662303f312\\esp32c6\\include\\**",
+                "C:/Users/abhay/AppData/Local/Arduino15/packages/esp32/tools/esp32-arduino-libs/idf-release_v5.1-3662303f312/esp32c6/include/esp_wifi/include/esp_private"
             ],
             "forcedInclude": [
                 "C:\\Users\\abhay\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.0.0-rc1\\cores\\esp32\\Arduino.h"

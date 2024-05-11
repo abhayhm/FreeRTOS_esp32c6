@@ -1,4 +1,4 @@
-#line 1 "C:\\rtos_esp32c6\\.vscode\\arduino.json"
+#line 1 "C:\\repos\\rtos_esp32c6\\.vscode\\arduino.json"
 {
     "configuration": "JTAGAdapter=default,CDCOnBoot=cdc,PartitionScheme=default,CPUFreq=160,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none,EraseFlash=none",
     "board": "esp32:esp32:dfrobot_firebeetle2_esp32c6",
